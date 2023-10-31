@@ -3,7 +3,6 @@ import ReactDOM from "react-dom/client";
 import "./index.css";
 import { RouterProvider, createBrowserRouter } from "react-router-dom";
 import Home from "./Page/Home";
-import NavBar from "./coponents/NavBar";
 
 const router = createBrowserRouter([
   {
@@ -13,7 +12,7 @@ const router = createBrowserRouter([
       {
         path: "/",
         element: (
-          <div className="text-center mt-40 text-5xl font-semibold">
+          <div className="text-center h-[150vh] mt-40 text-5xl font-semibold">
             This is{" "}
             <span className="text-red-400 font-bold underline">home</span>
           </div>
@@ -22,7 +21,7 @@ const router = createBrowserRouter([
       {
         path: "/about",
         element: (
-          <div className="text-center mt-40 text-5xl font-semibold">
+          <div className="text-center h-[150vh] mt-40 text-5xl font-semibold">
             This is{" "}
             <span className="text-red-400 font-bold underline">about</span>
           </div>
@@ -31,7 +30,7 @@ const router = createBrowserRouter([
       {
         path: "/services",
         element: (
-          <div className="text-center mt-40 text-5xl font-semibold">
+          <div className="text-center h-[150vh] mt-40 text-5xl font-semibold">
             This is{" "}
             <span className="text-red-400 font-bold underline">services</span>
           </div>
@@ -40,7 +39,7 @@ const router = createBrowserRouter([
       {
         path: "/portfolio",
         element: (
-          <div className="text-center mt-40 text-5xl font-semibold">
+          <div className="text-center h-[150vh] mt-40 text-5xl font-semibold">
             This is{" "}
             <span className="text-red-400 font-bold underline">portfolio</span>
           </div>
@@ -49,9 +48,18 @@ const router = createBrowserRouter([
       {
         path: "/contact",
         element: (
-          <div className="text-center mt-40 text-5xl font-semibold">
+          <div className="text-center h-[150vh] mt-40 text-5xl font-semibold">
             This is{" "}
             <span className="text-red-400 font-bold underline">contact</span>
+          </div>
+        ),
+      },
+      {
+        path: "/dashboard",
+        element: (
+          <div className="text-center h-[150vh] mt-40 text-5xl font-semibold">
+            This is{" "}
+            <span className="text-red-400 font-bold underline">dashboard</span>
           </div>
         ),
       },

@@ -1,66 +1,81 @@
 import { NavLink } from "react-router-dom";
 import reactLogo from "../assets/react.svg";
+import "./NavBar.css";
+import { AiOutlineClose, AiOutlineMenu } from "react-icons/ai";
+import { useState } from "react";
 
 const NavBar = () => {
+  const [mobileNavCall, setMobileNavCall] = useState(false);
+  const [navClass, setNavClass] = useState("");
+
+  window.addEventListener("scroll", function () {
+    if (window.scrollY >= 300) {
+      setNavClass(" fixed top-0 left-0 w-full bg-[#3f3f46] text-white");
+    } else {
+      setNavClass("");
+    }
+  });
+
   const links = (
     <>
-      <div>
-        <NavLink to="/">home</NavLink>
+      <div className="max-md:w-full md:text-lg font-semibold">
+        <NavLink to="/">HOME</NavLink>
       </div>
 
-      <div>
-        <NavLink to="/about">about</NavLink>
+      <div className="max-md:w-full md:text-lg font-semibold">
+        <NavLink to="/about">ABOUT</NavLink>
       </div>
 
-      <div>
-        <NavLink to="/services">services</NavLink>
+      <div className="max-md:w-full md:text-lg font-semibold">
+        <NavLink to="/services">SERVICES</NavLink>
       </div>
 
-      <div>
-        <NavLink to="/portfolio">portfolio</NavLink>
+      <div className="max-md:w-full md:text-lg font-semibold">
+        <NavLink to="/portfolio">PORTFOLIO</NavLink>
       </div>
 
-      <div>
-        <NavLink to="/contact">contact</NavLink>
+      <div className="max-md:w-full md:text-lg font-semibold">
+        <NavLink to="/contact">CONTACT</NavLink>
+      </div>
+
+      <div className="max-md:w-full md:text-lg font-semibold">
+        <NavLink to="/dashboard">DASHBOARD</NavLink>
       </div>
     </>
   );
 
   return (
-    <div>
-      <div className="navbar my-5 container mx-auto">
-        <div className="navbar-start">
-          <a className="normal-case text-xl">
-            <img src={reactLogo} alt="logo" />
-          </a>
-        </div>
-
-        <div className="navbar-end">
-          <div className="link-div hidden md:flex gap-10">{links}</div>
-          <div className="dropdown  dropdown-end">
-            <label tabIndex={0} className="btn btn-ghost md:hidden">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                className="h-10 w-10"
-                fill="none"
-                viewBox="0 0 24 24"
-                stroke="currentColor"
-              >
-                <path
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  strokeWidth="2"
-                  d="M4 6h16M4 12h8m-8 6h16"
-                />
-              </svg>
-            </label>
-            <ul
-              tabIndex={0}
-              className="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-white rounded-box w-52"
-            >
-              {links}
-            </ul>
+    <div className=" sticky top-0 duration-700">
+      <div className={`bg-blue-200  duration-700 ${navClass}`}>
+        <div className="py-4 container mx-auto flex justify-between items-center">
+          <div className="">
+            <img className="h-14" src={reactLogo} alt="logo" />
           </div>
+          <div className="">
+            <div className="hidden md:flex gap-10">{links}</div>
+            <div className="">
+              <button
+                onClick={() => setMobileNavCall(!mobileNavCall)}
+                tabIndex={0}
+                className="btn btn-ghost md:hidden"
+              >
+                {mobileNavCall ? (
+                  <AiOutlineClose className="text-3xl"></AiOutlineClose>
+                ) : (
+                  <AiOutlineMenu className="text-3xl"></AiOutlineMenu>
+                )}
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div
+        className={`fixed md:hidden duration-700 min-h-screen overflow-x-hidden bg-gray-700 w-[425px] top-0 -z-10 ${
+          mobileNavCall ? "right-0" : "-right-[425px]"
+        }`}
+      >
+        <div className="mt-[140px] pl-16 flex flex-col items-center gap-4 text-white">
+          {links}
         </div>
       </div>
     </div>
