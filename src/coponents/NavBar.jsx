@@ -2,6 +2,30 @@ import { NavLink } from "react-router-dom";
 import reactLogo from "../assets/react.svg";
 
 const NavBar = () => {
+  const links = (
+    <>
+      <div>
+        <NavLink to="/">home</NavLink>
+      </div>
+
+      <div>
+        <NavLink to="/about">about</NavLink>
+      </div>
+
+      <div>
+        <NavLink to="/services">services</NavLink>
+      </div>
+
+      <div>
+        <NavLink to="/portfolio">portfolio</NavLink>
+      </div>
+
+      <div>
+        <NavLink to="/contact">contact</NavLink>
+      </div>
+    </>
+  );
+
   return (
     <div>
       <div className="navbar my-5 container mx-auto">
@@ -12,18 +36,7 @@ const NavBar = () => {
         </div>
 
         <div className="navbar-end">
-          <div className="link-div hidden md:flex gap-10">
-            <NavLink className="font-bold text-xl" to="/">
-              Home
-            </NavLink>
-            <NavLink className="font-bold text-xl" to="/donation-box">
-              Donation
-            </NavLink>
-
-            <NavLink className="font-bold text-xl" to="/statistics">
-              Statistics
-            </NavLink>
-          </div>
+          <div className="link-div hidden md:flex gap-10">{links}</div>
           <div className="dropdown  dropdown-end">
             <label tabIndex={0} className="btn btn-ghost md:hidden">
               <svg
@@ -45,16 +58,7 @@ const NavBar = () => {
               tabIndex={0}
               className="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-white rounded-box w-52"
             >
-              <li>
-                <NavLink to="/">Home</NavLink>
-              </li>
-              <li>
-                <NavLink to="/donation-box">Donation</NavLink>
-              </li>
-
-              <li>
-                <NavLink to="/statistics">Statistics</NavLink>
-              </li>
+              {links}
             </ul>
           </div>
         </div>
