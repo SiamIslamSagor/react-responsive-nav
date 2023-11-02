@@ -12,7 +12,7 @@ const router = createBrowserRouter([
       {
         path: "/",
         element: (
-          <div className="text-center h-[150vh] mt-40 text-5xl font-semibold">
+          <div className="text-center h-[10vh] mt-40 text-5xl font-semibold">
             This is{" "}
             <span className="text-red-400 font-bold underline">home</span>
           </div>
@@ -21,7 +21,7 @@ const router = createBrowserRouter([
       {
         path: "/about",
         element: (
-          <div className="text-center h-[150vh] mt-40 text-5xl font-semibold">
+          <div className="text-center h-[10vh] mt-40 text-5xl font-semibold">
             This is{" "}
             <span className="text-red-400 font-bold underline">about</span>
           </div>
@@ -30,7 +30,7 @@ const router = createBrowserRouter([
       {
         path: "/services",
         element: (
-          <div className="text-center h-[150vh] mt-40 text-5xl font-semibold">
+          <div className="text-center h-[10vh] mt-40 text-5xl font-semibold">
             This is{" "}
             <span className="text-red-400 font-bold underline">services</span>
           </div>
@@ -39,7 +39,7 @@ const router = createBrowserRouter([
       {
         path: "/portfolio",
         element: (
-          <div className="text-center h-[150vh] mt-40 text-5xl font-semibold">
+          <div className="text-center h-[10vh] mt-40 text-5xl font-semibold">
             This is{" "}
             <span className="text-red-400 font-bold underline">portfolio</span>
           </div>
@@ -48,7 +48,7 @@ const router = createBrowserRouter([
       {
         path: "/contact",
         element: (
-          <div className="text-center h-[150vh] mt-40 text-5xl font-semibold">
+          <div className="text-center h-[10vh] mt-40 text-5xl font-semibold">
             This is{" "}
             <span className="text-red-400 font-bold underline">contact</span>
           </div>
@@ -57,7 +57,7 @@ const router = createBrowserRouter([
       {
         path: "/dashboard",
         element: (
-          <div className="text-center h-[150vh] mt-40 text-5xl font-semibold">
+          <div className="text-center h-[10vh] mt-40 text-5xl font-semibold">
             This is{" "}
             <span className="text-red-400 font-bold underline">dashboard</span>
           </div>

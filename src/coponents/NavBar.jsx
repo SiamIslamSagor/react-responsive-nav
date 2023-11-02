@@ -10,9 +10,9 @@ const NavBar = () => {
 
   window.addEventListener("scroll", function () {
     if (window.scrollY >= 300) {
-      setNavClass(" fixed top-0 left-0 w-full bg-[#3f3f46] text-white");
+      setNavClass(" fixed top-0 left-0 w-full bg-[#512B81] text-white");
     } else {
-      setNavClass("");
+      setNavClass("bg-[#4477CE]");
     }
   });
 
@@ -46,7 +46,7 @@ const NavBar = () => {
 
   return (
     <div className=" sticky top-0 duration-700">
-      <div className={`bg-blue-200  duration-700 ${navClass}`}>
+      <div className={`  duration-700 ${navClass}`}>
         <div className="py-4 container mx-auto flex justify-between items-center">
           <div className="">
             <img className="h-14" src={reactLogo} alt="logo" />
@@ -70,7 +70,7 @@ const NavBar = () => {
         </div>
       </div>
       <div
-        className={`fixed md:hidden duration-700 min-h-screen overflow-x-hidden bg-gray-700 w-[425px] top-0 -z-10 ${
+        className={`fixed md:hidden duration-700 min-h-screen overflow-x-hidden bg-[#35155D] w-[425px] top-0 -z-10 ${
           mobileNavCall ? "right-0" : "-right-[425px]"
         }`}
       >
