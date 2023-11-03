@@ -8,7 +8,7 @@ import Register from "../coponents/Register/Register";
 
 const Home = () => {
   return (
-    <div>
+    <div className="mb-[1000px]">
       <NavBar></NavBar>
       <div className="container mx-auto">
         <Outlet></Outlet>
@@ -18,10 +18,10 @@ const Home = () => {
       </div>
       <div className="text-center flex justify-center mb-10 max-lg:flex-col gap-10">
         {/* <Button2></Button2> */}
-        <Login></Login>
-        <Register></Register>
+        {/* <Login></Login> */}
+        {/* <Register></Register> */}
       </div>
-      {/* <MySlider></MySlider> */}
+      <MySlider></MySlider>
     </div>
   );
 };
