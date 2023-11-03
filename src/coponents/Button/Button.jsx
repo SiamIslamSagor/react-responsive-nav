@@ -1,12 +1,13 @@
 import { AwesomeButton } from "react-awesome-button";
 import "react-awesome-button/dist/styles.css";
 import { AwesomeButtonProgress } from "react-awesome-button";
+import "./btn.css";
 
 // import { BeakerIcon, TrashIcon } from "@primer/octicons-react"; // custom icons
 
 const Button = () => {
   return (
-    <div className="space-y-5 mt-4 mb-[200vh]">
+    <div className="space-y-5 mt-4">
       <div className="space-x-2">
         <AwesomeButton type="primary">Primary</AwesomeButton>
         <AwesomeButton type="secondary">Secondary</AwesomeButton>

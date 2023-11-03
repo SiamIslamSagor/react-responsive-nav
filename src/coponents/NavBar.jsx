@@ -10,7 +10,7 @@ const NavBar = () => {
 
   window.addEventListener("scroll", function () {
     if (window.scrollY >= 300) {
-      setNavClass(" fixed top-0 left-0 w-full bg-[#512B81] text-white");
+      setNavClass("top-0 left-0 w-full bg-[#512B81] text-white");
     } else {
       setNavClass("bg-[#4477CE]");
     }
@@ -45,7 +45,7 @@ const NavBar = () => {
   );
 
   return (
-    <div className=" sticky top-0 duration-700">
+    <div className=" sticky top-0 z-10 duration-700">
       <div className={`  duration-700 ${navClass}`}>
         <div className="py-4 container mx-auto flex justify-between items-center">
           <div className="">
