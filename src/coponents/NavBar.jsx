@@ -18,27 +18,27 @@ const NavBar = () => {
 
   const links = (
     <>
-      <div className="max-md:w-full md:text-lg font-semibold">
+      <div className="nav-div max-md:w-full md:text-lg font-semibold">
         <NavLink to="/">HOME</NavLink>
       </div>
 
-      <div className="max-md:w-full md:text-lg font-semibold">
+      <div className="nav-div max-md:w-full md:text-lg font-semibold">
         <NavLink to="/about">ABOUT</NavLink>
       </div>
 
-      <div className="max-md:w-full md:text-lg font-semibold">
+      <div className="nav-div max-md:w-full md:text-lg font-semibold">
         <NavLink to="/services">SERVICES</NavLink>
       </div>
 
-      <div className="max-md:w-full md:text-lg font-semibold">
+      <div className="nav-div max-md:w-full md:text-lg font-semibold">
         <NavLink to="/portfolio">PORTFOLIO</NavLink>
       </div>
 
-      <div className="max-md:w-full md:text-lg font-semibold">
+      <div className="nav-div max-md:w-full md:text-lg font-semibold">
         <NavLink to="/contact">CONTACT</NavLink>
       </div>
 
-      <div className="max-md:w-full md:text-lg font-semibold">
+      <div className="nav-div max-md:w-full md:text-lg font-semibold">
         <NavLink to="/dashboard">DASHBOARD</NavLink>
       </div>
     </>

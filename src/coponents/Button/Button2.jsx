@@ -14,17 +14,15 @@ const Button2 = () => {
     }, 2000);
   };
   return (
-    <div className="mb-[300vh] container mx-auto text-center">
-      <div className=" h-96 w-80 rounded-lg bg-base-200">
-        <ReactiveButton
-          buttonState={state}
-          idleText="Submit"
-          loadingText="Loading"
-          successText="Done"
-          onClick={onClickHandler}
-        />
-      </div>
-    </div>
+    <ReactiveButton
+      type="submit"
+      buttonState={state}
+      idleText="Submit"
+      loadingText="Loading"
+      successText="Done"
+      errorText="Failed"
+      onClick={onClickHandler}
+    />
   );
 };
 

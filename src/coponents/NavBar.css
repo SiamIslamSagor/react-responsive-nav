@@ -2,12 +2,12 @@ div > a.active {
   border-bottom: 3px solid #ebebeb;
 }
 
-a {
+.nav-div > a {
   position: relative;
   text-decoration: none;
 }
 
-a::after {
+.nav-div > a::after {
   content: "";
   position: absolute;
   background-color: #1500ff;
