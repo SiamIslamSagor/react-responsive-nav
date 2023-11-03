@@ -4,12 +4,20 @@ import { AiFillEye, AiFillEyeInvisible } from "react-icons/ai";
 import { CgMail } from "react-icons/cg";
 import { BsGoogle } from "react-icons/bs";
 import { Link } from "react-router-dom";
+import loginBgImg from "../../assets/footbg3.png";
 
 const Login = () => {
   const [passwordType, setPasswordType] = useState(true);
+  const cardBg = {
+    backgroundImage: `url(${loginBgImg})`,
+    backgroundPosition: "center",
+    backgroundRepeat: "no-repeat",
+    backgroundSize: "cover",
+  };
   return (
     <div className="container mx-auto my-auto">
       <div
+        style={cardBg}
         className=" mx-auto rounded-xl max-w-sm md:max-w-lg bg-blue-200 py-10
       "
       >
@@ -17,7 +25,7 @@ const Login = () => {
         <form className="p-4">
           <div className="relative">
             <label className="label">
-              <span className="label-text">
+              <span className="label-text font-medium">
                 Email <span className="text-red-500">*</span>
               </span>
             </label>
@@ -32,7 +40,7 @@ const Login = () => {
           </div>
           <div className="relative">
             <label className="label">
-              <span className="label-text">
+              <span className="label-text font-medium">
                 Password <span className="text-red-500">*</span>
               </span>
             </label>
@@ -55,7 +63,7 @@ const Login = () => {
               ></AiFillEye>
             )}
           </div>
-          <div className="flex items-center justify-between">
+          <div className="pl-1 flex items-center justify-between">
             <label>
               <input type="checkbox" required />
               &nbsp;Remember me
@@ -69,7 +77,7 @@ const Login = () => {
           </div>
         </form>
         <div>
-          <p className="text-lg font-semibold text-gray-700">
+          <p className="text-lg font-medium text-gray-700">
             Don&apos;t have an account?{" "}
             <Link className="text-blue-600 link link-hover" to="/register">
               Register

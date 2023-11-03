@@ -4,7 +4,7 @@ import MySlider from "../coponents/Slider/Slider";
 import Button from "../coponents/Button/Button";
 import Button2 from "../coponents/Button/Button2";
 import Login from "../coponents/Login/Login";
-import bg from "../assets/svg (2).png";
+import Register from "../coponents/Register/Register";
 
 const Home = () => {
   return (
@@ -16,9 +16,10 @@ const Home = () => {
       <div className="text-center mb-10">
         <Button></Button>
       </div>
-      <div className="text-center border h-[60vh] flex justify-center mb-10">
+      <div className="text-center flex justify-center mb-10 max-lg:flex-col gap-10">
         {/* <Button2></Button2> */}
         <Login></Login>
+        <Register></Register>
       </div>
       {/* <MySlider></MySlider> */}
     </div>
