@@ -12,7 +12,7 @@ const NavBar = () => {
     if (window.scrollY >= 300) {
       setNavClass("top-0 left-0 w-full bg-[#512B81] text-white");
     } else {
-      setNavClass("bg-[#4477CE]");
+      setNavClass("bg-[#C2D9FF]");
     }
   });
 
