@@ -125,9 +125,9 @@ const Register = () => {
           </AwesomeButton>
         </div>
       </div>
-      {/* <div className="anim-div">
+      <div className="anim-div">
         <RegisterAnim></RegisterAnim>
-      </div> */}
+      </div>
     </div>
   );
 };

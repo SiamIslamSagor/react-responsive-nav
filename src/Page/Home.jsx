@@ -22,10 +22,10 @@ const Home = () => {
       <div className="text-center flex justify-center mb-10 flex-col gap-10">
         {/* <Button2></Button2> */}
         {/* <Anim></Anim> */}
-        {/* <Register></Register> */}
+        <Register></Register>
         {/* <Login></Login> */}
         {/* <RegisterAnim></RegisterAnim> */}
-        <User></User>
+        {/* <User></User> */}
       </div>
       <MySlider></MySlider>
     </div>
