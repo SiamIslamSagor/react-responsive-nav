@@ -7,6 +7,7 @@ import Login from "../coponents/Login/Login";
 import Register from "../coponents/Register/Register";
 import Anim from "../coponents/Anim/Anim";
 import RegisterAnim from "../coponents/Anim/RegisterAnim";
+import User from "../coponents/User/User";
 
 const Home = () => {
   return (
@@ -21,9 +22,10 @@ const Home = () => {
       <div className="text-center flex justify-center mb-10 flex-col gap-10">
         {/* <Button2></Button2> */}
         {/* <Anim></Anim> */}
-        <Register></Register>
-        <Login></Login>
+        {/* <Register></Register> */}
+        {/* <Login></Login> */}
         {/* <RegisterAnim></RegisterAnim> */}
+        <User></User>
       </div>
       <MySlider></MySlider>
     </div>

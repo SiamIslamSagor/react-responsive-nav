@@ -8,8 +8,6 @@ import { Link } from "react-router-dom";
 import registerBgImg from "../../assets/footerBg.png";
 import RegisterAnim from "../Anim/RegisterAnim";
 import "./register.css";
-import SkeletonComponent from "../SkeletonComponent/SkeletonComponent ";
-import Skeleton from "react-loading-skeleton";
 
 const Register = () => {
   const cardBg = {
@@ -130,7 +128,6 @@ const Register = () => {
       {/* <div className="anim-div">
         <RegisterAnim></RegisterAnim>
       </div> */}
-      <SkeletonComponent></SkeletonComponent>
     </div>
   );
 };

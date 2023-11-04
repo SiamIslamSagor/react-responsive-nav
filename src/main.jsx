@@ -3,6 +3,7 @@ import ReactDOM from "react-dom/client";
 import "./index.css";
 import { RouterProvider, createBrowserRouter } from "react-router-dom";
 import Home from "./Page/Home";
+import { SkeletonTheme } from "react-loading-skeleton";
 
 const router = createBrowserRouter([
   {
@@ -69,6 +70,8 @@ const router = createBrowserRouter([
 
 ReactDOM.createRoot(document.getElementById("root")).render(
   <React.StrictMode>
-    <RouterProvider router={router} />
+    <SkeletonTheme baseColor="#A9A9A9" highlightColor="#6B728E">
+      <RouterProvider router={router} />
+    </SkeletonTheme>
   </React.StrictMode>
 );

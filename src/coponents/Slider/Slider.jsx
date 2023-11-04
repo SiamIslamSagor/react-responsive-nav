@@ -13,27 +13,27 @@ import { Autoplay, Pagination, Navigation } from "swiper/modules";
 const MySlider = () => {
   const data = [
     {
-      id: 1,
+      id: "sdf",
       img: "https://caferati.me/images/series/bojack-0.png",
     },
     {
-      id: 2,
+      id: "dfg",
       img: "https://caferati.me/images/series/bojack-3.jpg",
     },
     {
-      id: 3,
+      id: "shdf",
       img: "https://caferati.me/images/series/bojack-4.jpg",
     },
     {
-      id: 4,
+      id: "ghfd",
       img: "https://caferati.me/images/series/bojack-0.png",
     },
     {
-      id: 5,
+      id: "shddedf",
       img: "https://caferati.me/images/series/bojack-3.jpg",
     },
     {
-      id: 6,
+      id: "gh",
       img: "https://caferati.me/images/series/bojack-4.jpg",
     },
   ];

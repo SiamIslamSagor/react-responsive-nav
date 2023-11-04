@@ -1,11 +1,11 @@
-import Skeleton, { SkeletonTheme } from "react-loading-skeleton";
+import React from "react";
 
-const SkeletonComponent = () => (
-  <SkeletonTheme color="#202020" highlightColor="#444">
-    <section>
-      <Skeleton height={50} width={50} />
-    </section>
-  </SkeletonTheme>
-);
+const SkeletonComponent = () => {
+  return (
+    <div>
+      <h4>skleton</h4>
+    </div>
+  );
+};
 
 export default SkeletonComponent;
