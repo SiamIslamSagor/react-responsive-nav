@@ -6,6 +6,10 @@ import { BsGoogle } from "react-icons/bs";
 import { BiSolidUser } from "react-icons/bi";
 import { Link } from "react-router-dom";
 import registerBgImg from "../../assets/footerBg.png";
+import RegisterAnim from "../Anim/RegisterAnim";
+import "./register.css";
+import SkeletonComponent from "../SkeletonComponent/SkeletonComponent ";
+import Skeleton from "react-loading-skeleton";
 
 const Register = () => {
   const cardBg = {
@@ -17,10 +21,10 @@ const Register = () => {
 
   const [passwordType, setPasswordType] = useState(true);
   return (
-    <div className="container mx-auto my-auto">
+    <div className="container mx-auto my-auto flex items-center justify-between flex-row-reverse max-lg:flex-col">
       <div
         style={cardBg}
-        className=" mx-auto rounded-xl max-w-sm md:max-w-lg bg-[#CDF5FD] py-10
+        className="flex-1  rounded-xl max-w-sm md:max-w-lg bg-[#CDF5FD] py-10
       "
       >
         <h2 className="text-center text-4xl font-bold">Register</h2>
@@ -102,7 +106,7 @@ const Register = () => {
             </label>
           </div>
           <div className="form-control mt-6">
-            <AwesomeButton type="primary">Register</AwesomeButton>
+            <AwesomeButton type="secondary">Register</AwesomeButton>
           </div>
         </form>
         <div className="text-white">
@@ -117,12 +121,16 @@ const Register = () => {
           <p className="my-2">or</p>
           <AwesomeButton
             after={<BsGoogle className="text-3xl pl-3"></BsGoogle>}
-            type="secondary"
+            type="primary"
           >
             Register With Google
           </AwesomeButton>
         </div>
       </div>
+      {/* <div className="anim-div">
+        <RegisterAnim></RegisterAnim>
+      </div> */}
+      <SkeletonComponent></SkeletonComponent>
     </div>
   );
 };
