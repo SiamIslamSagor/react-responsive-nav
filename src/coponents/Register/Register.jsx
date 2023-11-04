@@ -22,7 +22,7 @@ const Register = () => {
     <div className="container mx-auto my-auto flex items-center justify-between flex-row-reverse max-lg:flex-col">
       <div
         style={cardBg}
-        className="flex-1  rounded-xl max-w-sm md:max-w-lg bg-[#CDF5FD] py-10
+        className="flex-1  rounded-xl max-sm:w-[360px] sm:w-full mx-[20px] max-w-lg bg-[#CDF5FD] py-10
       "
       >
         <h2 className="text-center text-4xl font-bold">Register</h2>

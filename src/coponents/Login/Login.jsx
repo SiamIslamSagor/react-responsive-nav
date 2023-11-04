@@ -5,6 +5,7 @@ import { CgMail } from "react-icons/cg";
 import { BsGoogle } from "react-icons/bs";
 import { Link } from "react-router-dom";
 import loginBgImg from "../../assets/footbg3.png";
+import LoginAnim from "../Anim/LoginAnim";
 
 const Login = () => {
   const [passwordType, setPasswordType] = useState(true);
@@ -15,11 +16,10 @@ const Login = () => {
     backgroundSize: "cover",
   };
   return (
-    <div className="container mx-auto my-auto">
+    <div className="container mx-auto my-auto flex items-center justify-between flex-row max-lg:flex-col">
       <div
         style={cardBg}
-        className=" mx-auto rounded-xl max-w-sm md:max-w-lg bg-blue-200 py-10
-      "
+        className=" flex-1 rounded-xl max-sm:w-[360px] sm:w-full mx-[20px] max-w-lg bg-blue-200 py-10"
       >
         <h2 className="text-center text-4xl font-bold">Login</h2>
         <form className="p-4">
@@ -91,6 +91,9 @@ const Login = () => {
         >
           Log In With Google
         </AwesomeButton>
+      </div>
+      <div className="anim-div">
+        <LoginAnim></LoginAnim>
       </div>
     </div>
   );

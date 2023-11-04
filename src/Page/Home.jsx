@@ -23,7 +23,7 @@ const Home = () => {
         {/* <Button2></Button2> */}
         {/* <Anim></Anim> */}
         <Register></Register>
-        {/* <Login></Login> */}
+        <Login></Login>
         {/* <RegisterAnim></RegisterAnim> */}
         {/* <User></User> */}
       </div>
