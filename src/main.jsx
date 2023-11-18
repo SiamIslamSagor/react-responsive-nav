@@ -70,8 +70,12 @@ const router = createBrowserRouter([
 
 ReactDOM.createRoot(document.getElementById("root")).render(
   <React.StrictMode>
-    <SkeletonTheme baseColor="#A9A9A9" highlightColor="#6B728E">
-      <RouterProvider router={router} />
-    </SkeletonTheme>
+    <div id="outer-container">
+      <SkeletonTheme baseColor="#A9A9A9" highlightColor="#6B728E">
+        <main id="page-wrap">
+          <RouterProvider router={router} />
+        </main>
+      </SkeletonTheme>
+    </div>
   </React.StrictMode>
 );
