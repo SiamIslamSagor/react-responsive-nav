@@ -10,12 +10,21 @@ import RegisterAnim from "../coponents/Anim/RegisterAnim";
 import User from "../coponents/User/User";
 import TypeWriter from "../coponents/TypeWriter/TypeWriter";
 import ReactNav from "../coponents/ReactNav/ReactNav";
+import MyComponent from "../coponents/Spring/AnimDiv";
+import { useEffect } from "react";
+import Aos from "aos";
+import "aos/dist/aos.css";
 
 const Home = () => {
+  useEffect(() => {
+    Aos.init();
+  }, []);
   return (
     <div className="mb-[300px]">
-      {/* <NavBar></NavBar> */}
-      <ReactNav></ReactNav>
+      <NavBar></NavBar>
+      {/* <div className="border border-transparent">
+        <ReactNav></ReactNav>
+      </div> */}
       <div className="container mx-auto">
         <Outlet></Outlet>
       </div>
@@ -36,6 +45,7 @@ const Home = () => {
         {/* <Login></Login> */}
         {/* <RegisterAnim></RegisterAnim> */}
         {/* <User></User> */}
+        <MyComponent></MyComponent>
       </div>
       {/* <MySlider></MySlider> */}
     </div>

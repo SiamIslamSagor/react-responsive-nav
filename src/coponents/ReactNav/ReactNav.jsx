@@ -1,14 +1,9 @@
-// import { slide as Menu } from "react-burger-menu";
-import Menu from "react-burger-menu/lib/menus/slide";
+import { slide as Menu } from "react-burger-menu";
 import "./reactNav.css";
 
 const ReactNav = () => {
   return (
-    <Menu
-      scaleDown
-      pageWrapId={"page-wrap"}
-      outerContainerId={"outer-container"}
-    >
+    <Menu>
       <a id="home" className="menu-item" href="/">
         Home
       </a>
