@@ -71,20 +71,20 @@ const ReactAnimCom = () => {
         {/* <Bounce direction="ri">
           <h1 className="text-5xl font-medium">React Reveal</h1>
         </Bounce> */}
-        <Flip className="bg-red-400 p-2" cascade damping={0.1} direction="left">
-          <p className="text-2xl font-bold mx-2">R</p>
-          <p className="text-2xl font-bold mx-2">e</p>
-          <p className="text-2xl font-bold mx-2">a</p>
-          <p className="text-2xl font-bold mx-2">c</p>
-          <p className="text-2xl font-bold mx-2">t</p>
-          <p className="text-2xl font-bold mx-2"> </p>
-          <p className="text-2xl font-bold mx-2">R</p>
-          <p className="text-2xl font-bold mx-2">e</p>
-          <p className="text-2xl font-bold mx-2">v</p>
-          <p className="text-2xl font-bold mx-2">e</p>
-          <p className="text-2xl font-bold mx-2">a</p>
-          <p className="text-2xl font-bold mx-2">l</p>
-        </Flip>
+        <Fade className=" px-1" cascade damping={0.1} direction="up">
+          <p className="text-5xl font-bold tracking-tight">R</p>
+          <p className="text-5xl font-bold tracking-tight">e</p>
+          <p className="text-5xl font-bold tracking-tight">a</p>
+          <p className="text-5xl font-bold tracking-tight">c</p>
+          <p className="text-5xl font-bold tracking-tight">t</p>
+          <p className="text-5xl font-bold tracking-tight"> </p>
+          <p className="text-5xl font-bold tracking-tight">R</p>
+          <p className="text-5xl font-bold tracking-tight">e</p>
+          <p className="text-5xl font-bold tracking-tight">v</p>
+          <p className="text-5xl font-bold tracking-tight">e</p>
+          <p className="text-5xl font-bold tracking-tight">a</p>
+          <p className="text-5xl font-bold tracking-tight">l</p>
+        </Fade>
       </div>
       <button className="btn btn-success my-5" type="button">
         Message
