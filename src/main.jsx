@@ -4,6 +4,7 @@ import "./index.css";
 import { RouterProvider, createBrowserRouter } from "react-router-dom";
 import Home from "./Page/Home";
 import { SkeletonTheme } from "react-loading-skeleton";
+import { StyledEngineProvider } from "@mui/material";
 
 const router = createBrowserRouter([
   {
@@ -70,8 +71,10 @@ const router = createBrowserRouter([
 
 ReactDOM.createRoot(document.getElementById("root")).render(
   <React.StrictMode>
-    <SkeletonTheme baseColor="#A9A9A9" highlightColor="#6B728E">
-      <RouterProvider router={router} />
-    </SkeletonTheme>
+    <StyledEngineProvider injectFirst>
+      <SkeletonTheme baseColor="#A9A9A9" highlightColor="#6B728E">
+        <RouterProvider router={router} />
+      </SkeletonTheme>
+    </StyledEngineProvider>
   </React.StrictMode>
 );
