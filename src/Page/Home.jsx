@@ -17,7 +17,7 @@ import "aos/dist/aos.css";
 import { Button } from "flowbite-react";
 import Footer from "../coponents/Footer/Footer";
 import ReactAnimCom from "../coponents/ReactAnimCom/ReactAnimCom";
-import BounceExample from "../coponents/ReactAnimCom/ReactAnimCom";
+import ReactReveal from "../coponents/ReactAnimCom/ReactReveal";
 // import AnimTitle from "../coponents/AnimTitle/AnimTitle";
 // import { Button } from "@mui/material";
 
@@ -37,7 +37,7 @@ const Home = () => {
       {/* <div>
         <AnimTitle></AnimTitle>
       </div> */}
-      <div className="text-center mb-10">
+      <div className="text-center mb-10 hidden">
         <div className="flex flex-wrap gap-2">
           <Button>Default</Button>
           <Button className="" color="blue">
@@ -88,8 +88,9 @@ const Home = () => {
         {/* <Login></Login> */}
         {/* <RegisterAnim></RegisterAnim> */}
         {/* <User></User> */}
-        <MyComponent></MyComponent>
-        <BounceExample></BounceExample>
+        {/* <MyComponent></MyComponent> */}
+        <ReactAnimCom></ReactAnimCom>
+        {/* <ReactReveal></ReactReveal> */}
       </div>
       {/* <div className="mt-[900px]">
         <Footer></Footer>
